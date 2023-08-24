@@ -6,29 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa interactivo</title>
+   
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
 
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="mapa.html" class="navbar-brand">Co<span>Mundo</span></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+        </div>
+    </div>
+     <body onLoad="popupWin()">
 
     <div id="name">
-        <center><span> Pais Seleccionado:</span>
-            <p id="namep" style="color: red;">Name</p>
+        <center><span style="color: #FCC43C;"> Pais Seleccionado:</span>
+            <p id="namep" style="color:#FCC43C;">Name</p>
         </center>
         <div id="img-container"></div>
     </div>
     <div>
         <svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" width="100%" height="700"
             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 667"
-            style=" background-color: rgb(119, 224, 248);" xml:space="preserve">
+            style="background-image: radial-gradient(circle at 38.12% 24.53%, #131d1b 0, #0c1311 25%, #000000 50%, #000000 75%, #000000 100%);" xml:space="preserve">
             <style type="text/css">
                 #name {
                     position: absolute;
-                    background-color: rgba(255, 255, 255, 0.84);
+                    background-image: radial-gradient(circle at 50% 50%, #ff0095 0, #f30099 12.5%, #d70098 25%, #b70094 37.5%, #94008a 50%, #8c0fb3 62.5%, #520773 75%, #340a69 87.5%, #110c60 100%);
                     width: fit-content;
                     opacity: 0;
                     border-radius: 15px;
-                    border: 3px solid rgb(253, 235, 37);
+                    border: 8px solid #f8ff1f;
                     padding: 0px 5px;
                     font-size: 1.5rem;
 
@@ -39,1521 +67,1521 @@
                 }
 
                 .st1 {
-                    fill: #19B4B1;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st2 {
-                    fill: #85061E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st3 {
-                    fill: #A951FF;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st4 {
-                    fill: #D45E28;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st5 {
-                    fill: #CD9955;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st6 {
-                    fill: #A9B9CD;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st7 {
-                    fill: #A24C33;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st8 {
-                    fill: #AC35D6;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st9 {
-                    fill: #AF5FB8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st10 {
-                    fill: #B0EAC6;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st11 {
-                    fill: #35DF4A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st12 {
-                    fill: #96A560;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st13 {
-                    fill: #AB0FE6;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st14 {
-                    fill: #17C333;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st15 {
-                    fill: #D1843C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st16 {
-                    fill: #0B8722;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st17 {
-                    fill: #99A44A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st18 {
-                    fill: #86B62E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st19 {
-                    fill: #FD94CA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st20 {
-                    fill: #BEFD1D;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st21 {
-                    fill: #CFAD39;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st22 {
-                    fill: #B371F8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st23 {
-                    fill: #51CD8E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st24 {
-                    fill: #3B313F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st25 {
-                    fill: #69B565;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st26 {
-                    fill: #70C15F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st27 {
-                    fill: #9CAC43;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st28 {
-                    fill: #AF2F35;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st29 {
-                    fill: #4782C9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st30 {
-                    fill: #7F1530;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st31 {
-                    fill: #0C90D0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st32 {
-                    fill: #15D652;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st33 {
-                    fill: #76B44E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st34 {
-                    fill: #2C9929;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st35 {
-                    fill: #82FDA8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st36 {
-                    fill: #038798;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st37 {
-                    fill: #5ED59A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st38 {
-                    fill: #C14E98;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st39 {
-                    fill: #A5AE75;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st40 {
-                    fill: #2BC72D;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st41 {
-                    fill: #462F8A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st42 {
-                    fill: #F70C3C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st43 {
-                    fill: #7C04AD;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st44 {
-                    fill: #D37032;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st45 {
-                    fill: #B4FFFA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st46 {
-                    fill: #17A29F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st47 {
-                    fill: #B3D881;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st48 {
-                    fill: #370DFE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st49 {
-                    fill: #113AC5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st50 {
-                    fill: #62401D;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st51 {
-                    fill: #A6D560;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st52 {
-                    fill: #C81625;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st53 {
-                    fill: #612F2E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st54 {
-                    fill: #4AAEA5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st55 {
-                    fill: #532AE1;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st56 {
-                    fill: #B7EE75;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st57 {
-                    fill: #BE0545;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st58 {
-                    fill: #0BFABD;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st59 {
-                    fill: #4F7E29;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st60 {
-                    fill: #3A1588;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st61 {
-                    fill: #07493E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st62 {
-                    fill: #645A41;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st63 {
-                    fill: #4166F4;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st64 {
-                    fill: #6CF818;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st65 {
-                    fill: #BFB0D8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st66 {
-                    fill: #5519D3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st67 {
-                    fill: #BC627C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st68 {
-                    fill: #E703D0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st69 {
-                    fill: #1110FF;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st70 {
-                    fill: #D62268;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st71 {
-                    fill: #9CEE22;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st72 {
-                    fill: #8A8559;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st73 {
-                    fill: #189E3B;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st74 {
-                    fill: #D1ED6C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st75 {
-                    fill: #717EE3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st76 {
-                    fill: #E29177;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st77 {
-                    fill: #9E5A96;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st78 {
-                    fill: #0E6F77;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st79 {
-                    fill: #30F675;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st80 {
-                    fill: #5CED27;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st81 {
-                    fill: #33F90F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st82 {
-                    fill: #A7F4B0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st83 {
-                    fill: #E7AE74;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st84 {
-                    fill: #B41835;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st85 {
-                    fill: #C48AB8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st86 {
-                    fill: #4690E5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st87 {
-                    fill: #C983D5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st88 {
-                    fill: #96D2E7;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st89 {
-                    fill: #504865;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st90 {
-                    fill: #503636;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st91 {
-                    fill: #97FD51;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st92 {
-                    fill: #F63C28;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st93 {
-                    fill: #0B4B51;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st94 {
-                    fill: #BE700A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st95 {
-                    fill: #6B42C9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st96 {
-                    fill: #E7FE92;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st97 {
-                    fill: #03DCFA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st98 {
-                    fill: #F31548;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st99 {
-                    fill: #28CCCC;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st100 {
-                    fill: #9084AE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st101 {
-                    fill: #260F24;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st102 {
-                    fill: #BC95F3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st103 {
-                    fill: #9C75B2;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st104 {
-                    fill: #23E66C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st105 {
-                    fill: #31BC30;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st106 {
-                    fill: #29727A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st107 {
-                    fill: #1F890F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st108 {
-                    fill: #05BD40;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st109 {
-                    fill: #B41DEC;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st110 {
-                    fill: #5EAF4C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st111 {
-                    fill: #155F54;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st112 {
-                    fill: #8F9AC9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st113 {
-                    fill: #77582B;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st114 {
-                    fill: #A737C7;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st115 {
-                    fill: #9A11BE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st116 {
-                    fill: #908145;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st117 {
-                    fill: #A6AB67;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st118 {
-                    fill: #92B362;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st119 {
-                    fill: #ECE111;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st120 {
-                    fill: #336A6C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st121 {
-                    fill: #331229;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st122 {
-                    fill: #74FDC9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st123 {
-                    fill: #BD2AE1;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st124 {
-                    fill: #74ABD0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st125 {
-                    fill: #C0BC95;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st126 {
-                    fill: #5A63BC;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st127 {
-                    fill: #BBE03A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st128 {
-                    fill: #E85576;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st129 {
-                    fill: #B5BCF7;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st130 {
-                    fill: #87B5F2;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st131 {
-                    fill: #65150F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st132 {
-                    fill: #46EC12;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st133 {
-                    fill: #2A81F0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st134 {
-                    fill: #33838A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st135 {
-                    fill: #D58C35;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st136 {
-                    fill: #37EA59;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st137 {
-                    fill: #308E55;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st138 {
-                    fill: #86F783;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st139 {
-                    fill: #7A49CA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st140 {
-                    fill: #E6C80B;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st141 {
-                    fill: #98B488;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st142 {
-                    fill: #967F62;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st143 {
-                    fill: #509CED;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st144 {
-                    fill: #261C21;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st145 {
-                    fill: #55EE11;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st146 {
-                    fill: #CA424B;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st147 {
-                    fill: #20014A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st148 {
-                    fill: #190650;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st149 {
-                    fill: #061DBA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st150 {
-                    fill: #219334;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st151 {
-                    fill: #40E918;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st152 {
-                    fill: #489266;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st153 {
-                    fill: #A422DA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st154 {
-                    fill: #B3E3EA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st155 {
-                    fill: #4A804E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st156 {
-                    fill: #83D0A3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st157 {
-                    fill: #406706;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st158 {
-                    fill: #BF61AE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st159 {
-                    fill: #80C45F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st160 {
-                    fill: #74C755;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st161 {
-                    fill: #33D35C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st162 {
-                    fill: #917BC6;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st163 {
-                    fill: #6C0AE9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st164 {
-                    fill: #D7DC1A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st165 {
-                    fill: #32BA1F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st166 {
-                    fill: #2AEC88;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st167 {
-                    fill: #B59B94;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st168 {
-                    fill: #DF077D;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st169 {
-                    fill: #E5A9FB;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st170 {
-                    fill: #314244;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st171 {
-                    fill: #36284D;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st172 {
-                    fill: #105D2F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st173 {
-                    fill: #57EA6F;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st174 {
-                    fill: #73E60E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st175 {
-                    fill: #E9AFF3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st176 {
-                    fill: #F0C505;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st177 {
-                    fill: #7D4535;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st178 {
-                    fill: #4A6E72;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st179 {
-                    fill: #43B9E0;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st180 {
-                    fill: #B625C5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st181 {
-                    fill: #F33B05;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st182 {
-                    fill: #305A51;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st183 {
-                    fill: #875F62;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st184 {
-                    fill: #3603A5;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st185 {
-                    fill: #D83088;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st186 {
-                    fill: #88C47E;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st187 {
-                    fill: #C6D7BE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st188 {
-                    fill: #681C69;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st189 {
-                    fill: #F81D05;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st190 {
-                    fill: #8225F7;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st191 {
-                    fill: #B39F4A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st192 {
-                    fill: #B19BF1;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st193 {
-                    fill: #D1CECD;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st194 {
-                    fill: #88158A;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st195 {
-                    fill: #23AFEE;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st196 {
-                    fill: #A19B43;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st197 {
-                    fill: #96D919;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st198 {
-                    fill: #73B43B;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st199 {
-                    fill: #907606;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st200 {
-                    fill: #89A447;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st201 {
-                    fill: #656D12;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st202 {
-                    fill: #64D1F8;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st203 {
-                    fill: #A5ED63;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st204 {
-                    fill: #2ACFA7;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st205 {
-                    fill: #EC2B13;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st206 {
-                    fill: #CF742C;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st207 {
-                    fill: #E85275;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st208 {
-                    fill: #E593AD;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st209 {
-                    fill: #6F7BA3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st210 {
-                    fill: #E672B2;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st211 {
-                    fill: #6AE127;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st212 {
-                    fill: #46EE98;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st213 {
-                    fill: #FF5092;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st214 {
-                    fill: #FD3539;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st215 {
-                    fill: #A70CE3;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st216 {
-                    fill: #4B3EF9;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
                 .st217 {
-                    fill: #339CFA;
-                    stroke: #444444;
-                    stroke-width: 0.5;
+                    fill: #8c0fb3;
+                    stroke: #ffc401;
+                    stroke-width: 0.4;
                     stroke-miterlimit: 12;
                 }
 
@@ -4186,217 +4214,216 @@ KIqiKIqiqKvp/wUYACRufODMGriIAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 6 90)">
                h0.4L667.2,289.7z" />
                         <path class="st217" d="M711.7,326.1l0.1,3.3l-2.2,1.1l-3.9-0.7l-3.3-2.1l-4.8-0.5l-7.2-3.8l0.9-2.7l1.7-1.3l2.8-0.4l3.8,3.3
                l1.4-0.2l2.7,2.8l2.4,1.2l1.5-0.7L711.7,326.1z" />
-                        <text transform="matrix(1 0 0 1 452.8997 209.1998)" class="all-path st218 st219">Faeroe
-                            Is.</text>
+                        <text transform="matrix(1 0 0 1 452.8997 209.1998)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
                         <text transform="matrix(1 0 0 1 194.9777 294.2151)" class="all-path st218 st220"
-                            id="USA.jpg">USA</text>
-                        <text transform="matrix(1 0 0 1 843.5859 313.2086)" class="all-path st218 st221">Japon</text>
-                        <text transform="matrix(1 0 0 1 615.7004 413.9572)" class="all-path st218 st222">Syc.</text>
-                        <text transform="matrix(1 0 0 1 678.7935 345.1999)" class="all-path st218 st221">India</text>
-                        <text transform="matrix(1 0 0 1 482.2499 270.031)" class="all-path st218 st223">Fr.</text>
-                        <text transform="matrix(1 0 0 1 889.4717 388.2383)" class="all-path st218 st222">F.S.M.</text>
-                        <text transform="matrix(1 0 0 1 743.2296 310.8492)" class="all-path st218 st224">China</text>
+                            id="USA.jpg" fill="#f8ff1f">USA</text>
+                        <text transform="matrix(1 0 0 1 843.5859 313.2086)" class="all-path st218 st221"id="Japon.jpg" fill="#f8ff1f">Japon</text>
+                        <text transform="matrix(1 0 0 1 615.7004 413.9572)" class="all-path st218 st222"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 678.7935 345.1999)" class="all-path st218 st221"id="India.jpeg" fill="#f8ff1f">India</text>
+                        <text transform="matrix(1 0 0 1 482.2499 270.031)" class="all-path st218 st223"id="francia.jpg" fill="#f8ff1f">Francia</text>
+                        <text transform="matrix(1 0 0 1 889.4717 388.2383)" class="all-path st218 st222"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 743.2296 310.8492)" class="all-path st218 st224"id="China.jpg" fill="#f8ff1f">China</text>
                         <text transform="matrix(8.971855e-02 -0.996 0.996 8.971855e-02 452.8995 297.6495)"
-                            class="all-path st218 st225">Port.</text>
-                        <text transform="matrix(1 0 0 1 336.3574 436.7845)" class="all-path st218 st226">brazil</text>
-                        <text transform="matrix(1 0 0 1 63.2285 401.924)" class="all-path st218 st222">Kir.</text>
-                        <text transform="matrix(1 0 0 1 803.3998 363.4997)" class="all-path st218 st221">Phil.</text>
-                        <text transform="matrix(1 0 0 1 201.471 337.5114)" class="all-path st218 st221">Mexico</text>
-                        <text transform="matrix(1 0 0 1 466.2002 293.3305)" class="all-path st218 st221">Sp.</text>
-                        <text transform="matrix(1 0 0 1 658.2495 387.5502)" class="all-path st218 st219">Mald.</text>
-                        <text transform="matrix(1 0 0 1 458.3933 222.9001)" class="all-path st218 st223">U.K.</text>
-                        <text transform="matrix(1 0 0 1 525.3931 296.8107)" class="all-path st218 st219">Greece</text>
-                        <text transform="matrix(1 0 0 1 34.4191 444.6181)" class="all-path st218 st222">Am. Samoa</text>
-                        <text transform="matrix(1 0 0 1 492.4997 238.1001)" class="all-path st218 st219">Den.</text>
-                        <text transform="matrix(1 0 0 1 363.2916 155.7156)" class="all-path st218 st223">Grlnd.</text>
-                        <text transform="matrix(1 0 0 1 854.5148 370.7004)" class="all-path st218 st222">Guam</text>
-                        <text transform="matrix(1 0 0 1 858.6003 360.6495)" class="all-path st218 st222">N.M.I.</text>
-                        <text transform="matrix(1 0 0 1 304.0999 351.6002)" class="all-path st218 st219">P.R.</text>
-                        <text transform="matrix(1 0 0 1 178.1126 235.17)" class="all-path st218 st224">Canada</text>
-                        <text transform="matrix(1 0 0 1 408.1659 362.3001)" class="all-path st218 st222">C.Vd.</text>
-                        <text transform="matrix(1 0 0 1 484.1002 245.2001)" class="all-path st218 st219">Neth.</text>
-                        <text transform="matrix(1 0 0 1 271.8499 357.711)" class="all-path st218 st222">Jam.</text>
-                        <text transform="matrix(1 0 0 1 14.6732 432.6563)" class="all-path st218 st222">Samoa</text>
+                            class="all-path st218 st225"id="portugal.jpeg" fill="#f8ff1f">portugal</text>
+                        <text transform="matrix(1 0 0 1 336.3574 436.7845)" class="all-path st218 st226"id="Brazil.jpg" fill="#f8ff1f">Brazil</text>
+                        <text transform="matrix(1 0 0 1 63.2285 401.924)" class="all-path st218 st222"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 803.3998 363.4997)" class="all-path st218 st221"id="filipinas.jpg" fill="#f8ff1f">filipinas</text>
+                        <text transform="matrix(1 0 0 1 201.471 337.5114)"  class="all-path st218 st221"id="Mexico.jpg" fill="#f8ff1f">Mexico</text>
+                        <text transform="matrix(1 0 0 1 466.2002 293.3305)" class="all-path st218 st221"id="España.jpeg" fill="#f8ff1f">España</text>
+                        <text transform="matrix(1 0 0 1 658.2495 387.5502)" class="all-path st218 st219"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 458.3933 222.9001)" class="all-path st218 st223"id="reinounido.jpeg" fill="#f8ff1f">reino unido</text>
+                        <text transform="matrix(1 0 0 1 525.3931 296.8107)" class="all-path st218 st219"id="grecia.jpeg" fill="#f8ff1f">grecia</text>
+                        <text transform="matrix(1 0 0 1 34.4191 444.6181)" class="all-path st218 st222"id="SamoaAmericana.jpeg" fill="#f8ff1f">Samoa Americana</text>
+                        <text transform="matrix(1 0 0 1 492.4997 238.1001)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 363.2916 155.7156)" class="all-path st218 st223"id="Dinamarca.jpeg" fill="#f8ff1f">Dinamarca</text>
+                        <text transform="matrix(1 0 0 1 854.5148 370.7004)" class="all-path st218 st222"id="Guam.jpg" fill="#f8ff1f">Guam</text>
+                        <text transform="matrix(1 0 0 1 858.6003 360.6495)" class="all-path st218 st222"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 304.0999 351.6002)" class="all-path st218 st219"id="PuertoRico.jpg" fill="#f8ff1f">Puerto Rico</text>
+                        <text transform="matrix(1 0 0 1 178.1126 235.17)" class="all-path st218 st224"id="Canada.jpeg" fill="#f8ff1f">Canada</text>
+                        <text transform="matrix(1 0 0 1 408.1659 362.3001)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 484.1002 245.2001)" class="all-path st218 st219"id="paisesbajos.jpg" fill="#f8ff1f">paises bajos.</text>
+                        <text transform="matrix(1 0 0 1 271.8499 357.711)" class="all-path st218 st222"id="Jamaica.jpg" fill="#f8ff1f">Jamaica</text>
+                        <text transform="matrix(1 0 0 1 14.6732 432.6563)" class="all-path st218 st222"id="samoa.jpg" fill="#f8ff1f">Samoa</text>
                         <text transform="matrix(0.7343 -0.6788 0.6788 0.7343 622.0573 355.2066)"
-                            class="all-path st218 st219">Oman</text>
-                        <text transform="matrix(1 0 0 1 565.0763 294.9821)" class="all-path st218 st221">Tur.</text>
-                        <text transform="matrix(1 0 0 1 706.5272 339.1433)" class="all-path st218 st219">Bang.</text>
-                        <text transform="matrix(1 0 0 1 442.7916 386.5002)" class="all-path st218 st219">S.L.</text>
-                        <text transform="matrix(1 0 0 1 909.1003 403.0998)" class="all-path st218 st227">Nauru</text>
-                        <text transform="matrix(1 0 0 1 518.4359 172.8217)" class="all-path st218 st221">Nor.</text>
-                        <text transform="matrix(1 0 0 1 609.0088 327.7193)" class="all-path st218 st227">Bahr.</text>
-                        <text transform="matrix(1 0 0 1 16.2805 463.7499)" class="all-path st218 st222">Tongo</text>
-                        <text transform="matrix(1 0 0 1 544.4998 211.0447)" class="all-path st218 st221">Fin.</text>
-                        <text transform="matrix(1 0 0 1 806.9998 418.3999)" class="all-path st218 st223">Indo.</text>
-                        <text transform="matrix(1 0 0 1 622.0575 456.014)" class="all-path st218 st222">Mus.</text>
-                        <text transform="matrix(1 0 0 1 518.4921 201.666)" class="all-path st218 st221">Swe.</text>
-                        <text transform="matrix(1 0 0 1 315.9999 372.7002)" class="all-path st218 st222">Tr.T.</text>
-                        <text transform="matrix(1 0 0 1 754.2001 395.5542)" class="all-path st218 st221">Malay.</text>
-                        <text transform="matrix(1 0 0 1 267.5 376)" class="all-path st218 st219">Pan.</text>
-                        <text transform="matrix(1 0 0 1 830.4 380.2004)" class="all-path st218 st222">Palau</text>
+                            class="all-path st218 st219"id="Oman.jpg" fill="#f8ff1f">Oman</text>
+                        <text transform="matrix(1 0 0 1 565.0763 294.9821)" class="all-path st218 st221"id="turquia.jpg" fill="#f8ff1f">Turquia</text>
+                        <text transform="matrix(1 0 0 1 706.5272 339.1433)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 442.7916 386.5002)" class="all-path st218 st219"id="SierraLeona.jpg" fill="#f8ff1f">Sierra leona</text>
+                        <text transform="matrix(1 0 0 1 909.1003 403.0998)" class="all-path st218 st227"id="Nauru.jpeg" fill="#f8ff1f">Nauru</text>
+                        <text transform="matrix(1 0 0 1 518.4359 172.8217)" class="all-path st218 st221"id="noruega.jpg" fill="#f8ff1f">Noruega</text>
+                        <text transform="matrix(1 0 0 1 609.0088 327.7193)" class="all-path st218 st227"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 16.2805 463.7499)" class="all-path st218 st222"id="tongo.png" fill="#f8ff1f">Tongo</text>
+                        <text transform="matrix(1 0 0 1 544.4998 211.0447)" class="all-path st218 st221"id="finlandia.jpg" fill="#f8ff1f">Finlandia</text>
+                        <text transform="matrix(1 0 0 1 806.9998 418.3999)" class="all-path st218 st223"id="indonesia.jpeg" fill="#f8ff1f">Indonesia</text>
+                        <text transform="matrix(1 0 0 1 622.0575 456.014)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 518.4921 201.666)" class="all-path st218 st221"id="Suecia.jpg" fill="#f8ff1f">Suecia</text>
+                        <text transform="matrix(1 0 0 1 315.9999 372.7002)" class="all-path st218 st222"id="Trinidad.jpg" fill="#f8ff1f">Trinidad y Tobago</text>
+                        <text transform="matrix(1 0 0 1 754.2001 395.5542)" class="all-path st218 st221"id="malasia.jpg" fill="#f8ff1f">Malasia</text>
+                        <text transform="matrix(1 0 0 1 267.5 376)" class="all-path st218 st219"id="Panama.jpg" fill="#f8ff1f">Panama</text>
+                        <text transform="matrix(1 0 0 1 830.4 380.2004)" class="all-path st218 st222"id="palau.jpeg" fill="#f8ff1f">Palau</text>
                         <text transform="matrix(0.1268 -0.9919 0.9919 0.1268 283.5352 511.9968)"
-                            class="all-path st218 st221">chile</text>
-                        <text transform="matrix(1 0 0 1 740.3176 360.6497)" class="all-path st218 st228">Thai.</text>
-                        <text transform="matrix(1 0 0 1 543.7995 227.0999)" class="all-path st218 st219">Est.</text>
-                        <text transform="matrix(1 0 0 1 801.0061 341.5221)" class="all-path st218 st221">Taiwan</text>
-                        <text transform="matrix(1 0 0 1 506.7242 290.3812)" class="all-path st218 st228">italia</text>
-                        <text transform="matrix(1 0 0 1 907.7036 443.2733)" class="all-path st218 st219">Van.</text>
-                        <text transform="matrix(1 0 0 1 753.4045 401.9243)" class="all-path st218 st222">Sing.</text>
-                        <text transform="matrix(1 0 0 1 560.2659 304.0498)" class="all-path st218 st227">Cyp.</text>
-                        <text transform="matrix(1 0 0 1 687.7058 390.6999)" class="all-path st218 st219">Sri L.</text>
-                        <text transform="matrix(1 0 0 1 591.7997 429.5999)" class="all-path st218 st222">Com.</text>
-                        <text transform="matrix(1 0 0 1 944.0991 458.728)" class="all-path st218 st221">Fiji</text>
-                        <text transform="matrix(1 0 0 1 743.3992 199.0705)" class="all-path st218 st224">Russia</text>
-                        <text transform="matrix(1 0 0 1 643.8998 262.9525)" class="all-path st218 st221">Kaz.</text>
-                        <text transform="matrix(1 0 0 1 602.4001 289.9)" class="all-path st218 st222">Aze.</text>
-                        <text transform="matrix(1 0 0 1 659.5999 294.65)" class="all-path st218 st222">Tjk.</text>
-                        <text transform="matrix(1 0 0 1 546.6996 480.5002)" class="all-path st218 st222">Les.</text>
-                        <text transform="matrix(1 0 0 1 637.408 284.5417)" class="all-path st218 st228">Uzb.</text>
-                        <text transform="matrix(1 0 0 1 459.2478 315.0999)" class="all-path st218 st221">Mor.</text>
-                        <text transform="matrix(1 0 0 1 281.4563 395.5537)" class="all-path st218 st221">col</text>
-                        <text transform="matrix(1 0 0 1 814.1013 428.3997)" class="all-path st218 st228">T.L.</text>
-                        <text transform="matrix(1 0 0 1 565.1497 420.7601)" class="all-path st218 st221">Tanz.</text>
+                            class="all-path st218 st221"id="Chile.jpg" fill="#f8ff1f">Chile</text>
+                        <text transform="matrix(1 0 0 1 740.3176 360.6497)" class="all-path st218 st228"id="tailandia.jpg" fill="#f8ff1f">Tailandia</text>
+                        <text transform="matrix(1 0 0 1 543.7995 227.0999)" class="all-path st218 st219"id="estonia.jpg" fill="#f8ff1f">Estonia</text>
+                        <text transform="matrix(1 0 0 1 801.0061 341.5221)" class="all-path st218 st221"id="Taiwan.jpg" fill="#f8ff1f">Taiwan</text>
+                        <text transform="matrix(1 0 0 1 506.7242 290.3812)" class="all-path st218 st228"id="Italia.jpg" fill="#f8ff1f">Italia</text>
+                        <text transform="matrix(1 0 0 1 907.7036 443.2733)" class="all-path st218 st219"id="vanuatu.jpg" fill="#f8ff1f">Vanuatu</text>
+                        <text transform="matrix(1 0 0 1 753.4045 401.9243)" class="all-path st218 st222"id="singapur.jpg" fill="#f8ff1f">Singapur</text>
+                        <text transform="matrix(1 0 0 1 560.2659 304.0498)" class="all-path st218 st227"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 687.7058 390.6999)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 591.7997 429.5999)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 944.0991 458.728)" class="all-path st218 st221"id="fiji.jpg" fill="#f8ff1f">Fiji</text>
+                        <text transform="matrix(1 0 0 1 743.3992 199.0705)" class="all-path st218 st224"id="Russia.jpeg" fill="#f8ff1f">Russia</text>
+                        <text transform="matrix(1 0 0 1 643.8998 262.9525)" class="all-path st218 st221"id="kazakhstan.jpeg" fill="#f8ff1f">Kazakhstan</text>
+                        <text transform="matrix(1 0 0 1 602.4001 289.9)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 659.5999 294.65)" class="all-path st218 st222"id="tajikistan.jpg" fill="#f8ff1f">Tajikistan</text>
+                        <text transform="matrix(1 0 0 1 546.6996 480.5002)" class="all-path st218 st222"id="lesoto.jpg" fill="#f8ff1f">Lesoto</text>
+                        <text transform="matrix(1 0 0 1 637.408 284.5417)" class="all-path st218 st228"id="uzbekistan.jpg" fill="#f8ff1f">Uzbekistan</text>
+                        <text transform="matrix(1 0 0 1 459.2478 315.0999)" class="all-path st218 st221"id="morocco.jpg" fill="#f8ff1f">Morocco</text>
+                        <text transform="matrix(1 0 0 1 281.4563 395.5537)" class="all-path st218 st221"id="Colombia.jpg" fill="#f8ff1f">Colombia</text>
+                        <text transform="matrix(1 0 0 1 814.1013 428.3997)" class="all-path st218 st228"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 565.1497 420.7601)" class="all-path st218 st221"id="tanzania.jpeg" fill="#f8ff1f">Tanzania</text>
                         <text transform="matrix(0.1385 -0.9904 0.9904 0.1385 305.7 517.3613)"
-                            class="all-path st218 st229">Argentina</text>
-                        <text transform="matrix(1 0 0 1 592.0632 344.2356)" class="all-path st218 st221">Saud.</text>
-                        <text transform="matrix(1 0 0 1 657.2279 324.062)" class="all-path st218 st221">Pak.</text>
-                        <text transform="matrix(1 0 0 1 595.9114 362.049)" class="all-path st218 st228">Yem.</text>
-                        <text transform="matrix(1 0 0 1 618.6006 339.1431)" class="all-path st218 st227">U.A.E.</text>
-                        <text transform="matrix(1 0 0 1 572.3496 404.4003)" class="all-path st218 st221">Ken.</text>
-                        <text transform="matrix(1 0 0 1 281.3232 437.4341)" class="all-path st218 st221">Peru</text>
+                            class="all-path st218 st229" id="Argentina.jpg" fill="#f8ff1f">Argentina</text>
+                        <text transform="matrix(1 0 0 1 592.0632 344.2356)" class="all-path st218 st221"id="saudi.jpeg" fill="#f8ff1f">saudi arabia</text>
+                        <text transform="matrix(1 0 0 1 657.2279 324.062)" class="all-path st218 st221"id="pakistan.jpg" fill="#f8ff1f">Pakistan</text>
+                        <text transform="matrix(1 0 0 1 595.9114 362.049)" class="all-path st218 st228"id="yemen.jpg" fill="#f8ff1f">Yemen</text>
+                        <text transform="matrix(1 0 0 1 618.6006 339.1431)" class="all-path st218 st227"id="EAU.jpeg" fill="#f8ff1f">E.A.U.</text>
+                        <text transform="matrix(1 0 0 1 572.3496 404.4003)" class="all-path st218 st221"id="kenia.jpg" fill="#f8ff1f">Kenia</text>
+                        <text transform="matrix(1 0 0 1 281.3232 437.4341)" class="all-path st218 st221"id="Peru.jpg" fill="#f8ff1f">Peru</text>
                         <text transform="matrix(0.48 -0.8773 0.8773 0.48 297.4711 348.8004)"
-                            class="all-path st218 st222">Dom. Rep.</text>
-                        <text transform="matrix(1 0 0 1 283.5353 357.7115)" class="all-path st218 st222">Haiti</text>
-                        <text transform="matrix(1 0 0 1 856.3972 411.1)" class="all-path st218 st221">P.N.G.</text>
-                        <text transform="matrix(1 0 0 1 517.121 443.273)" class="all-path st218 st221">Ang.</text>
-                        <text transform="matrix(1 0 0 1 750.0825 368.3505)" class="all-path st218 st222">Camb.</text>
-                        <text transform="matrix(1 0 0 1 760.3496 378.3003)" class="all-path st218 st219">Viet.</text>
+                            class="all-path st218 st222"id="RepublicaDominicana.jpeg" fill="#f8ff1f">Republica Dominicana</text>
+                        <text transform="matrix(1 0 0 1 283.5353 357.7115)" class="all-path st218 st222"id="Haiti.jpg" fill="#f8ff1f">Haiti</text>
+                        <text transform="matrix(1 0 0 1 856.3972 411.1)" class="all-path st218 st221"id="nuevaguinea.jpg" fill="#f8ff1f">Papua nueva guinea</text>
+                        <text transform="matrix(1 0 0 1 517.121 443.273)" class="all-path st218 st221"id="angola.jpeg" fill="#f8ff1f">Angola</text>
+                        <text transform="matrix(1 0 0 1 750.0825 368.3505)" class="all-path st218 st222"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 760.3496 378.3003)" class="all-path st218 st219"id="vietnam.jpg" fill="#f8ff1f">Vietnam</text>
                         <text transform="matrix(0.3198 -0.9475 0.9475 0.3198 579.9001 446.9998)"
-                            class="all-path st218 st228">Moz.</text>
-                        <text transform="matrix(1 0 0 1 251.2318 380.5002)" class="all-path st218 st219">C.R.</text>
+                            class="all-path st218 st228"id="mozambique.jpeg" fill="#f8ff1f">Mozambique</text>
+                        <text transform="matrix(1 0 0 1 251.2318 380.5002)" class="all-path st218 st219"id="CostaRica.jpg" fill="#f8ff1f">Costa Rica</text>
                         <text transform="matrix(-1.659702e-02 -0.9999 0.9999 -1.659702e-02 488.6642 399.0997)"
-                            class="all-path st218 st230">Benin</text>
-                        <text transform="matrix(1 0 0 1 490.4001 378.6998)" class="all-path st218 st221">Nigeria</text>
-                        <text transform="matrix(1 0 0 1 614.7136 312.2059)" class="all-path st218 st221">Iran</text>
+                            class="all-path st218 st230"id="benin.jpg" fill="#f8ff1f">Benin</text>
+                        <text transform="matrix(1 0 0 1 490.4001 378.6998)" class="all-path st218 st221"id="nigeria.jpg" fill="#f8ff1f">Nigeria</text>
+                        <text transform="matrix(1 0 0 1 614.7136 312.2059)" class="all-path st218 st221"id="iran.jpeg" fill="#f8ff1f">Iran</text>
                         <text transform="matrix(0.3612 -0.9325 0.9325 0.3612 243.6994 375.3801)"
-                            class="all-path st218 st222">El Sal.</text>
+                            class="all-path st218 st222"id="El salvador.jpg" fill="#f8ff1f">El salvador</text>
                         <text transform="matrix(0.6595 -0.7517 0.7517 0.6595 432.1705 379.3001)"
-                            class="all-path st218 st219">GnB.</text>
-                        <text transform="matrix(1 0 0 1 514.9739 279.5998)" class="all-path st218 st222">Cro.</text>
-                        <text transform="matrix(1 0 0 1 248.7998 356.6285)" class="all-path st218 st222">Belize</text>
-                        <text transform="matrix(1 0 0 1 532.703 489.8728)" class="all-path st218 st221">S.Af.</text>
-                        <text transform="matrix(1 0 0 1 525.7001 386.5002)" class="all-path st218 st221">C.A.R.</text>
-                        <text transform="matrix(1 0 0 1 549.5 365.9426)" class="all-path st218 st221">Sudan</text>
-                        <text transform="matrix(1 0 0 1 533.0003 398.3997)" class="all-path st218 st221">D.R.C.</text>
-                        <text transform="matrix(1 0 0 1 598.8003 319.9001)" class="all-path st218 st222">Kwt.</text>
-                        <text transform="matrix(1 0 0 1 501.7002 255.1502)" class="all-path st218 st221">Ger.</text>
-                        <text transform="matrix(1 0 0 1 487.3999 256.2999)" class="all-path st218 st219">Belg.</text>
-                        <text transform="matrix(1 0 0 1 442.7917 248.9139)" class="all-path st218 st221">Ire.</text>
-                        <text transform="matrix(1 0 0 1 818.1826 291.3839)" class="all-path st218 st228">N.K.</text>
-                        <text transform="matrix(1 0 0 1 819.4985 300.5859)" class="all-path st218 st228">S.K.</text>
+                            class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
+                        <text transform="matrix(1 0 0 1 514.9739 279.5998)" class="all-path st218 st222"id="croacia.jpg" fill="#f8ff1f">Croacia</text>
+                        <text transform="matrix(1 0 0 1 248.7998 356.6285)" class="all-path st218 st222"id="Belice.jpeg" fill="#f8ff1f">Belice</text>
+                        <text transform="matrix(1 0 0 1 532.703 489.8728)" class="all-path st218 st221"id="sudafrica.jpg" fill="#f8ff1f">Sudafrica</text> 
+                        <text transform="matrix(1 0 0 1 525.7001 386.5002)" class="all-path st218 st221"id="repdeAF.jpg" fill="#f8ff1f">rep de AF</text>
+                        <text transform="matrix(1 0 0 1 549.5 365.9426)" class="all-path st218 st221"id="sudan.jpwg" fill="#f8ff1f">Sudan</text>
+                        <text transform="matrix(1 0 0 1 533.0003 398.3997)" class="all-path st218 st221"id="repdeCongo.jpg" fill="#f8ff1f">Rep del congo</text>
+                        <text transform="matrix(1 0 0 1 598.8003 319.9001)" class="all-path st218 st222"id="kuwait.jpeg" fill="#f8ff1f">Kuwait</text>
+                        <text transform="matrix(1 0 0 1 501.7002 255.1502)" class="all-path st218 st221"id="alemania.jpeg" fill="#f8ff1f">alemania</text>
+                        <text transform="matrix(1 0 0 1 487.3999 256.2999)" class="all-path st218 st219"id="belgica.jpg" fill="#f8ff1f">Belgica</text>
+                        <text transform="matrix(1 0 0 1 442.7917 248.9139)" class="all-path st218 st221"id="irlanda.jpg" fill="#f8ff1f">Irlanda</text>
+                        <text transform="matrix(1 0 0 1 818.1826 291.3839)" class="all-path st218 st228"id="coreanorte.jpeg" fill="#f8ff1f">N.Korea</text>
+                        <text transform="matrix(1 0 0 1 819.4985 300.5859)" class="all-path st218 st228"id="coreasur.jpg" fill="#f8ff1f">S.Korea</text>
                         <text transform="matrix(5.417212e-02 -0.9985 0.9985 5.417212e-02 329.301 380.6897)"
-                            class="all-path st218 st231">Guy.</text>
-                        <text transform="matrix(1 0 0 1 248.1855 363.0496)" class="all-path st218 st222">Hond.</text>
-                        <text transform="matrix(1 0 0 1 726.2041 345.8499)" class="all-path st218 st228">Myan.</text>
-                        <text transform="matrix(1 0 0 1 488.6651 412.2996)" class="all-path st218 st228">Gabon</text>
-                        <text transform="matrix(1 0 0 1 493.9717 399.4325)" class="all-path st218 st222">Eq. G.</text>
-                        <text transform="matrix(1 0 0 1 253.8498 368.3603)" class="all-path st218 st222">Nic.</text>
-                        <text transform="matrix(1 0 0 1 544.5123 233.7002)" class="all-path st218 st219">Lat.</text>
+                            class="all-path st218 st231"id="Guayanas.jpg" fill="#f8ff1f">Guayanas</text>
+                        <text transform="matrix(1 0 0 1 248.1855 363.0496)" class="all-path st218 st222"id="Honduras.jpeg" fill="#f8ff1f">Honduras</text>
+                        <text transform="matrix(1 0 0 1 726.2041 345.8499)" class="all-path st218 st228"id="birmania.jpg" fill="#f8ff1f">Birmania</text>
+                        <text transform="matrix(1 0 0 1 488.6651 412.2996)" class="all-path st218 st228"id="Gabon.jpeg" fill="#f8ff1f">Gabon</text>
+                        <text transform="matrix(1 0 0 1 493.9717 399.4325)" class="all-path st218 st222"id="Guineaequatorial.jpg" fill="#f8ff1f">Guinea equatorial</text>
+                        <text transform="matrix(1 0 0 1 253.8498 368.3603)" class="all-path st218 st222"id="Nicaragua.jpeg" fill="#f8ff1f">Nicaragua</text>
+                        <text transform="matrix(1 0 0 1 544.5123 233.7002)" class="all-path st218 st219"id="Letonia.jpg" fill="#f8ff1f">Letonia</text>
                         <text transform="matrix(0.4014 -0.9159 0.9159 0.4014 563.9 402.1999)"
-                            class="all-path st218 st219">Uga.</text>
+                            class="all-path st218 st219"id="uganda.jpg" fill="#f8ff1f">Uganda</text>
                         <text transform="matrix(-0.1041 -0.9946 0.9946 -0.1041 571.8458 440.5671)"
-                            class="all-path st218 st230">Mali</text>
-                        <text transform="matrix(1 0 0 1 594.3999 289.5001)" class="all-path st218 st227">Arm.</text>
-                        <text transform="matrix(1 0 0 1 594.9995 377.6499)" class="all-path st218 st219">Solnd.</text>
-                        <text transform="matrix(1 0 0 1 625.3756 294.2152)" class="all-path st218 st228">Turkm.</text>
-                        <text transform="matrix(1 0 0 1 538.8102 441.3996)" class="all-path st218 st228">Zambia</text>
-                        <text transform="matrix(1 0 0 1 448.0001 352.5529)" class="all-path st218 st228">Mrt.</text>
-                        <text transform="matrix(1 0 0 1 482.6999 331.3498)" class="all-path st218 st221">Alg.</text>
-                        <text transform="matrix(1 0 0 1 538.2996 239.3999)" class="all-path st218 st219">Lith.</text>
-                        <text transform="matrix(1 0 0 1 577.6001 382.7)" class="all-path st218 st221">Eth.</text>
-                        <text transform="matrix(1 0 0 1 576.4998 361.2828)" class="all-path st218 st222">Erit.</text>
+                            class="all-path st218 st230"id="Malawi.jpg" fill="#f8ff1f">Malawi</text>
+                        <text transform="matrix(1 0 0 1 594.3999 289.5001)" class="all-path st218 st227"id="armenia.jpg" fill="#f8ff1f">Armenia</text>
+                        <text transform="matrix(1 0 0 1 594.9995 377.6499)" class="all-path st218 st219"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 625.3756 294.2152)" class="all-path st218 st228"id="Turkmenistan.jpeg" fill="#f8ff1f">Turkmenistan</text>
+                        <text transform="matrix(1 0 0 1 538.8102 441.3996)" class="all-path st218 st228"id="Zambia.jpg" fill="#f8ff1f">Zambia</text>
+                        <text transform="matrix(1 0 0 1 448.0001 352.5529)" class="all-path st218 st228"id="Mauritania.jpg" fill="#f8ff1f">Mauritania</text>
+                        <text transform="matrix(1 0 0 1 482.6999 331.3498)" class="all-path st218 st221"id="Algeria.jpeg" fill="#f8ff1f">Algeria</text>
+                        <text transform="matrix(1 0 0 1 538.2996 239.3999)" class="all-path st218 st219"id="Lituania.jpeg" fill="#f8ff1f">Lituania</text>
+                        <text transform="matrix(1 0 0 1 577.6001 382.7)" class="all-path st218 st221"id="Etiopia.jpg" fill="#f8ff1f">Etiopia</text>
+                        <text transform="matrix(1 0 0 1 576.4998 361.2828)" class="all-path st218 st222"id="Eritrea.jpg" fill="#f8ff1f">Eritrea</text>
                         <text transform="matrix(1.864757e-02 -0.9998 0.9998 1.864757e-02 477.8003 387.5991)"
-                            class="all-path st218 st219">Ghana</text>
+                            class="all-path st218 st219"id="Ghana.jpg" fill="#f8ff1f">Ghana</text>
                         <text transform="matrix(0.4499 -0.8931 0.8931 0.4499 236.9923 373.02)"
-                            class="all-path st218 st222">guat.</text>
-                        <text transform="matrix(1 0 0 1 523.7 277.1001)" class="all-path st218 st222">B.H.</text>
-                        <text transform="matrix(1 0 0 1 563.5012 316.1581)" class="all-path st218 st222">Jord.</text>
-                        <text transform="matrix(1 0 0 1 574.4999 306.2483)" class="all-path st218 st219">Syria</text>
-                        <text transform="matrix(1 0 0 1 491.4002 278.2)" class="all-path st218 st222">Mco.</text>
-                        <text transform="matrix(1 0 0 1 527.7499 287.8998)" class="all-path st218 st222">Alb.</text>
-                        <text transform="matrix(1 0 0 1 336.3575 504.2056)" class="all-path st218 st221">Ury.</text>
-                        <text transform="matrix(1 0 0 1 743.2296 271.4463)" class="all-path st218 st221">Mong.</text>
-                        <text transform="matrix(1 0 0 1 546.4 408.2)" class="all-path st218 st219">Rwa.</text>
+                            class="all-path st218 st222"id="Guatemala.jpg" fill="#f8ff1f">Guatemala</text>
+                        <text transform="matrix(1 0 0 1 523.7 277.1001)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 563.5012 316.1581)" class="all-path st218 st222"id="jordania.jpg" fill="#f8ff1f">Jordania</text>
+                        <text transform="matrix(1 0 0 1 574.4999 306.2483)" class="all-path st218 st219"id="siria.jpg" fill="#f8ff1f">Siria</text>
+                        <text transform="matrix(1 0 0 1 491.4002 278.2)" class="all-path st218 st222"id="USA.jpg"></text>
+                        <text transform="matrix(1 0 0 1 527.7499 287.8998)" class="all-path st218 st222"id="Albania.jpg" fill="#f8ff1f">Albania</text>
+                        <text transform="matrix(1 0 0 1 336.3575 504.2056)" class="all-path st218 st221"id="Uruguay.jpg" fill="#f8ff1f">Uruguay</text>
+                        <text transform="matrix(1 0 0 1 743.2296 271.4463)" class="all-path st218 st221"id="Mongolia.jpg" fill="#f8ff1f">Mongolia</text>
+                        <text transform="matrix(1 0 0 1 546.4 408.2)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
                         <text transform="matrix(0.7921 -0.6104 0.6104 0.7921 590.8902 399.4329)"
-                            class="all-path st218 st228">Som.</text>
-                        <text transform="matrix(1 0 0 1 301.2431 452.0031)" class="all-path st218 st221">bolivia</text>
-                        <text transform="matrix(1 0 0 1 505.35 391.9005)" class="all-path st218 st228">Cam.</text>
+                            class="all-path st218 st228"id="Somalia.jpg" fill="#f8ff1f">Somalia</text>
+                        <text transform="matrix(1 0 0 1 301.2431 452.0031)" class="all-path st218 st221"id="Bolivia.jpg" fill="#f8ff1f">Bolivia</text>
+                        <text transform="matrix(1 0 0 1 505.35 391.9005)" class="all-path st218 st228"id="Camerun.jpeg" fill="#f8ff1f">Camerún</text>
                         <text transform="matrix(0.3023 -0.9532 0.9532 0.3023 519.4001 412.45)"
-                            class="all-path st218 st222">Rep.Congo</text>
-                        <text transform="matrix(1 0 0 1 450.2001 335.2995)" class="all-path st218 st222">W.Sah.</text>
-                        <text transform="matrix(1 0 0 1 531.2502 277.9)" class="all-path st218 st222">Serb.</text>
+                            class="all-path st218 st222"id="Congo.jpeg" fill="#f8ff1f">Congo</text>
+                        <text transform="matrix(1 0 0 1 450.2001 335.2995)" class="all-path st218 st222"id="Sahara.jpeg" fill="#f8ff1f">Sahara</text>
+                        <text transform="matrix(1 0 0 1 531.2502 277.9)" class="all-path st218 st222"id="Serbia.jpg" fill="#f8ff1f">Serbia</text>
                         <text transform="matrix(2.125588e-02 -0.9998 0.9998 2.125588e-02 483.4995 399.0994)"
-                            class="all-path st218 st219">Togo</text>
-                        <text transform="matrix(1 0 0 1 743.8005 349.2498)" class="all-path st218 st219">Laos</text>
-                        <text transform="matrix(1 0 0 1 646.6299 312.2058)" class="all-path st218 st221">Afg.</text>
-                        <text transform="matrix(1 0 0 1 560.2658 262.9525)" class="all-path st218 st221">Ukr.</text>
-                        <text transform="matrix(1 0 0 1 526.6003 262.3)" class="all-path st218 st222">Svk.</text>
-                        <text transform="matrix(1 0 0 1 541.5 282.2999)" class="all-path st218 st219">Bulg.</text>
-                        <text transform="matrix(1 0 0 1 611.5724 329.85)" class="all-path st218 st227">Qatar</text>
-                        <text transform="matrix(1 0 0 1 514.344 266.0002)" class="all-path st218 st222">Aust.</text>
-                        <text transform="matrix(1 0 0 1 553.3502 474.4998)" class="all-path st218 st222">Swz.</text>
-                        <text transform="matrix(1 0 0 1 525.7001 267.9998)" class="all-path st218 st219">Hun.</text>
-                        <text transform="matrix(1 0 0 1 538.8101 273.0002)" class="all-path st218 st228">Rom.</text>
-                        <text transform="matrix(1 0 0 1 495.6279 358.569)" class="all-path st218 st221">Niger</text>
-                        <text transform="matrix(1 0 0 1 480.8997 280.7999)" class="all-path st218 st222">And.</text>
-                        <text transform="matrix(1 0 0 1 460.7003 383.9496)" class="all-path st218 st228">I.C.</text>
+                            class="all-path st218 st219"id="Togo.jpg" fill="#f8ff1f">Togo</text>
+                        <text transform="matrix(1 0 0 1 743.8005 349.2498)" class="all-path st218 st219"id="Laos.jpeg" fill="#f8ff1f">Laos</text>
+                        <text transform="matrix(1 0 0 1 646.6299 312.2058)" class="all-path st218 st221"id="Afganistan.jpg" fill="#f8ff1f">Afganistan</text>
+                        <text transform="matrix(1 0 0 1 560.2658 262.9525)" class="all-path st218 st221"id="Ucrania.jpeg" fill="#f8ff1f">Ucrania</text>
+                        <text transform="matrix(1 0 0 1 526.6003 262.3)" class="all-path st218 st222"id="Eslovenia.jpg" fill="#f8ff1f">Eslovenia</text>
+                        <text transform="matrix(1 0 0 1 541.5 282.2999)" class="all-path st218 st219"id="Bulgaria.jpeg" fill="#f8ff1f">Bulgaria</text>
+                        <text transform="matrix(1 0 0 1 611.5724 329.85)" class="all-path st218 st227"id="Qatar.jpeg" fill="#f8ff1f">Qatar</text>
+                        <text transform="matrix(1 0 0 1 514.344 266.0002)" class="all-path st218 st222"id="Austria.jpg" fill="#f8ff1f">Austria</text>
+                        <text transform="matrix(1 0 0 1 553.3502 474.4998)" class="all-path st218 st222"id="Suazilandia.jpg" fill="#f8ff1f">Suazilandia</text>
+                        <text transform="matrix(1 0 0 1 525.7001 267.9998)" class="all-path st218 st219"id="Hungria.jpg" fill="#f8ff1f">Hungria</text>
+                        <text transform="matrix(1 0 0 1 538.8101 273.0002)" class="all-path st218 st228"id="Rumania.jpeg" fill="#f8ff1f">Rumania</text>
+                        <text transform="matrix(1 0 0 1 495.6279 358.569)" class="all-path st218 st221"id="Niger.jpeg" fill="#f8ff1f">Niger</text>
+                        <text transform="matrix(1 0 0 1 480.8997 280.7999)" class="all-path st218 st222"id="Andorra.jpg" fill="#f8ff1f">Andorra</text>
+                        <text transform="matrix(1 0 0 1 460.7003 383.9496)" class="all-path st218 st228"id="cote.jpg" fill="#f8ff1f">Costa de Marfil</text>
                         <text transform="matrix(6.326730e-02 -0.998 0.998 6.326730e-02 456.7501 404.4012)"
-                            class="all-path st218 st219">Liberia</text>
-                        <text transform="matrix(1 0 0 1 774.0522 388.2387)" class="all-path st218 st222">Brunei</text>
-                        <text transform="matrix(1 0 0 1 588.6754 312.2499)" class="all-path st218 st228">Iraq</text>
-                        <text transform="matrix(1 0 0 1 590.4861 284.7)" class="all-path st218 st222">Geo.</text>
+                            class="all-path st218 st219"id="Liberia.jpeg" fill="#f8ff1f">Liberia</text>
+                        <text transform="matrix(1 0 0 1 774.0522 388.2387)" class="all-path st218 st222"id="Brunei.jpg" fill="#f8ff1f">Brunei</text>
+                        <text transform="matrix(1 0 0 1 588.6754 312.2499)" class="all-path st218 st228"id="Irak.jpeg" fill="#f8ff1f">Irak</text>
+                        <text transform="matrix(1 0 0 1 590.4861 284.7)" class="all-path st218 st222"id="Georgia.jpeg" fill="#f8ff1f">Georgia</text>
                         <text transform="matrix(1 2.797642e-03 -2.797642e-03 1 422.1169 368.3605)"
-                            class="all-path st218 st222">Gambia</text>
-                        <text transform="matrix(1 0 0 1 496.6 269.5998)" class="all-path st218 st222">Switz.</text>
-                        <text transform="matrix(1 0 0 1 522.3694 363.0518)" class="all-path st218 st221">Chad</text>
-                        <text transform="matrix(1 0 0 1 566.5002 310)" class="all-path st218 st222">Leb.</text>
-                        <text transform="matrix(1 0 0 1 594.4998 372.0998)" class="all-path st218 st222">Dji.</text>
-                        <text transform="matrix(1 0 0 1 548.2004 413.4004)" class="all-path st218 st219">Bur.</text>
+                            class="all-path st218 st222"id="Gambia.jpg" fill="#f8ff1f">Gambia</text>
+                        <text transform="matrix(1 0 0 1 496.6 269.5998)" class="all-path st218 st222"id="Suiza.jpeg" fill="#f8ff1f">Suiza</text>
+                        <text transform="matrix(1 0 0 1 522.3694 363.0518)" class="all-path st218 st221"id="Chad.jpg" fill="#f8ff1f">Chad</text>
+                        <text transform="matrix(1 0 0 1 566.5002 310)" class="all-path st218 st222"id="Libano.jpeg" fill="#f8ff1f">Libano</text>
+                        <text transform="matrix(1 0 0 1 594.4998 372.0998)" class="all-path st218 st222"id="Djibouti.jpg" fill="#f8ff1f">Djibouti</text>
+                        <text transform="matrix(1 0 0 1 548.2004 413.4004)" class="all-path st218 st219"id="USA.jpg" fill="#f8ff1f"></text>
                         <text transform="matrix(-3.005585e-02 -0.9995 0.9995 -3.005585e-02 337.2494 384.7593)"
-                            class="all-path st218 st232">Sur.</text>
-                        <text transform="matrix(1.1312 0 0 1 565.8999 312.25)" class="all-path st218 st233">Isr.</text>
-                        <text transform="matrix(1 0 0 1 471.7 355.5001)" class="all-path st218 st221">Mali</text>
-                        <text transform="matrix(1 0 0 1 435.5999 364.6505)" class="all-path st218 st228">Sen.</text>
+                            class="all-path st218 st232"id="Surinam.jpg" fill="#f8ff1f">Surinam</text>
+                        <text transform="matrix(1.1312 0 0 1 565.8999 312.25)" class="all-path st218 st233"id="Israel.jpeg" fill="#f8ff1f">Israel</text>
+                        <text transform="matrix(1 0 0 1 471.7 355.5001)" class="all-path st218 st221"id="mali.jpg" fill="#f8ff1f">Mali</text>
+                        <text transform="matrix(1 0 0 1 435.5999 364.6505)" class="all-path st218 st228"id="Senegal.jpg" fill="#f8ff1f">Senegal</text>
                         <text transform="matrix(0.6544 -0.7561 0.7561 0.6544 436.5013 384.024)"
-                            class="all-path st218 st231">Gin.</text>
-                        <text transform="matrix(1 0 0 1 552.3997 453.3606)" class="all-path st218 st228">Zimb.</text>
-                        <text transform="matrix(1 0 0 1 527.7496 252.2)" class="all-path st218 st221">Pol.</text>
+                            class="all-path st218 st231"id="Guinea.jpg" fill="#f8ff1f">Guinea</text>
+                        <text transform="matrix(1 0 0 1 552.3997 453.3606)" class="all-path st218 st228"id="Zimbabwe.jpg" fill="#f8ff1f">Zimbabwe</text>
+                        <text transform="matrix(1 0 0 1 527.7496 252.2)" class="all-path st218 st221"id="Polonia.jpg" fill="#f8ff1f">Polonia</text>
                         <text transform="matrix(0.794 0.6079 -0.6079 0.794 320.0716 461.9724)"
-                            class="all-path st218 st221">para</text>
-                        <text transform="matrix(1 0 0 1 547.8 248.8)" class="all-path st218 st221">Bela.</text>
-                        <text transform="matrix(1 0 0 1 514.3441 258.9002)" class="all-path st218 st222">Cz. Rep.</text>
-                        <text transform="matrix(1 0 0 1 469.65 370.7)" class="all-path st218 st228">B.F.</text>
-                        <text transform="matrix(1 0 0 1 514.9735 456.0143)" class="all-path st218 st228">Nam.</text>
-                        <text transform="matrix(1 0 0 1 517.1205 330.6689)" class="all-path st218 st221">Libya</text>
+                            class="all-path st218 st221"id="Paraguay.jpg" fill="#f8ff1f">Paraguay</text>
+                        <text transform="matrix(1 0 0 1 547.8 248.8)" class="all-path st218 st221"id="BieloURS.jpg" fill="#f8ff1f">BieloURS</text>
+                        <text transform="matrix(1 0 0 1 514.3441 258.9002)" class="all-path st218 st222"id="Repcheca.jpg" fill="#f8ff1f">Republica checa</text>
+                        <text transform="matrix(1 0 0 1 469.65 370.7)" class="all-path st218 st228"id="Burkina.jpg" fill="#f8ff1f">Burkina</text>
+                        <text transform="matrix(1 0 0 1 514.9735 456.0143)" class="all-path st218 st228"id="Namibia.jpg" fill="#f8ff1f">Namibia</text>
+                        <text transform="matrix(1 0 0 1 517.1205 330.6689)" class="all-path st218 st221"id="Libia.jpg" fill="#f8ff1f">Libia</text>
                         <text transform="matrix(0.1755 -0.9845 0.9845 0.1755 505.2 312.2066)"
-                            class="all-path st218 st219">Tun.</text>
-                        <text transform="matrix(1 0 0 1 707.9641 323.3542)" class="all-path st218 st219">Bhutan</text>
-                        <text transform="matrix(1 0 0 1 550.9998 385.1005)" class="all-path st218 st228">S. Sud.</text>
-                        <text transform="matrix(1 0 0 1 537.5499 463.7498)" class="all-path st218 st219">Bwa.</text>
-                        <text transform="matrix(1 0 0 1 274.7998 330.6689)" class="all-path st218 st219">Bhs.</text>
+                            class="all-path st218 st219"id="Tunisia.jpg" fill="#f8ff1f">Tunisia</text>
+                        <text transform="matrix(1 0 0 1 707.9641 323.3542)" class="all-path st218 st219"id="Bután.jpg" fill="#f8ff1f">Bután</text>
+                        <text transform="matrix(1 0 0 1 550.9998 385.1005)" class="all-path st218 st228"id="sudansur.jpg" fill="#f8ff1f">sudan sur</text>
+                        <text transform="matrix(1 0 0 1 537.5499 463.7498)" class="all-path st218 st219"id="Botsuana.jpg" fill="#f8ff1f">Botsuana</text>
+                        <text transform="matrix(1 0 0 1 274.7998 330.6689)" class="all-path st218 st219"id="Bahamas.jpg" fill="#f8ff1f">Bahamas</text>
                         <text transform="matrix(0.7712 -0.6366 0.6366 0.7712 920.5497 522.067)"
-                            class="all-path st218 st221">New Z.</text>
-                        <text transform="matrix(1 0 0 1 260.5818 347.4002)" class="all-path st218 st219">Cuba</text>
-                        <text transform="matrix(1 0 0 1 253.8949 406.407)" class="all-path st218 st221">ecu</text>
+                            class="all-path st218 st221"id="NuevaZelanda.jpg" fill="#f8ff1f">Nueva Zelanda</text>
+                        <text transform="matrix(1 0 0 1 260.5818 347.4002)" class="all-path st218 st219"id="Cuba.jpeg" fill="#f8ff1f">Cuba</text>
+                        <text transform="matrix(1 0 0 1 253.8949 406.407)" class="all-path st218 st221"id="Ecuador.jpg" fill="#f8ff1f">Ecuador</text>
                         <text transform="matrix(1 0 0 1 817.5002 475.3997)"
-                            class="all-path st218 st224">Australia</text>
-                        <text transform="matrix(1 0 0 1 297.4708 383.4019)" class="all-path st218 st221">Ven.</text>
-                        <text transform="matrix(1 0 0 1 888.4977 431.6528)" class="all-path st218 st219">S. Is.</text>
-                        <text transform="matrix(1 0 0 1 597.5189 450.0001)" class="all-path st218 st228">Mad.</text>
-                        <text transform="matrix(1 0 0 1 422.1168 210.9998)" class="all-path st218 st228">Iceland</text>
-                        <text transform="matrix(1 0 0 1 548.4863 332.4381)" class="all-path st218 st221">Egypt</text>
-                        <text transform="matrix(1 0 0 1 671.6646 285.9572)" class="all-path st218 st228">Kgz.</text>
-                        <text transform="matrix(1 0 0 1 691.0996 325.0652)" class="all-path st218 st219">Nepal</text>
+                            class="all-path st218 st224"id="Australia.jpg" fill="#f8ff1f">Australia</text>
+                        <text transform="matrix(1 0 0 1 297.4708 383.4019)" class="all-path st218 st221"id="Venezuela.jpg" fill="#f8ff1f">Venezuela</text>
+                        <text transform="matrix(1 0 0 1 888.4977 431.6528)" class="all-path st218 st219"id="solomon.jpg" fill="#f8ff1f">isla solomon</text>
+                        <text transform="matrix(1 0 0 1 597.5189 450.0001)" class="all-path st218 st228"id="Madagascar.jpg" fill="#f8ff1f">Madagascar</text>
+                        <text transform="matrix(1 0 0 1 422.1168 210.9998)" class="all-path st218 st228"id="islandia.jpg" fill="#f8ff1f">islandia</text>
+                        <text transform="matrix(1 0 0 1 548.4863 332.4381)" class="all-path st218 st221"id="Egipto.jpg" fill="#f8ff1f">Egipto</text>
+                        <text transform="matrix(1 0 0 1 671.6646 285.9572)" class="all-path st218 st228"id="Kirguistan.jpg" fill="#f8ff1f">Kirguistan</text>
+                        <text transform="matrix(1 0 0 1 691.0996 325.0652)" class="all-path st218 st219"id="Nepal.jpg" fill="#f8ff1f">Nepal</text>
                     </g>
                 </g>
             </g>
@@ -4406,6 +4433,7 @@ KIqiKIqiqKvp/wUYACRufODMGriIAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 6 90)">
     </div>
     <script src="js/mapa.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
 </body>
 
 </html>

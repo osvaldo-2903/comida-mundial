@@ -13,14 +13,14 @@ document.querySelectorAll(".all-path").forEach(e => {
             fathercontainer.style.opacity = "0";
         }
 
-        e.id = e.innerHTML
-        e.style.fill = "pink"
+        e.id = e.id;
+        e.style.fill = "yellow"
         const fathercontainer = document.getElementById("name")
         fathercontainer.style.opacity = 1
 
         const container = document.getElementById("name")
         const imgContainer = document.getElementById("img-container");
-
+ /* 
         $.ajax({
             url: `/C:/xampp/htdocs/comida-mundial/img/paises/`,
             type: 'HEAD',
@@ -31,7 +31,7 @@ document.querySelectorAll(".all-path").forEach(e => {
                 // Create and attach the image element
                 var img = document.createElement("img");
                 img.setAttribute("src", `/C:/xampp/htdocs/comida-mundial/img/paises/${e.id}.jpg`);
-                /* img.setAttribute("src", `/xampp/htdocs/comundo/img/${e.id}`); */
+                /* img.setAttribute("src", `/xampp/htdocs/comundo/img/${e.id}`); 
                 img.setAttribute("height", "200");
                 img.setAttribute("width", "200");
                 console.log("File Name:", fileName);
@@ -40,17 +40,18 @@ document.querySelectorAll(".all-path").forEach(e => {
             error: function () {
                 console.log("Failed to retrieve file information.");
             }
-        })
-
+        }) 
+ */
         const label = document.getElementById("namep");
         if (imgContainer.children.length > 0) {
             imgContainer.removeChild(imgContainer.children[0])
         }
         label.innerText = e.innerHTML;
         var img = document.createElement("img");
-        img.setAttribute("src", `/C:/xampp/htdocs/comida-mundial/img/paises/${e.id}.jpg`);
+        img.setAttribute("src", `/comundo/img/paises/${e.id}`);
         img.setAttribute("height", "200");
         img.setAttribute("width", "200");
+        img.setAttribute("border", "3px");
         imgContainer.appendChild(img)
 
     })
